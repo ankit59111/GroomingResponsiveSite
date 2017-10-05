@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <title>men</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div>
+<div class="navbar" id="mynavbar">    
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	<a href="#home">Home</a>
+    <a href="javascript:void(0)" class="dropbtn">MEN</a>
+    <a href="javascript:void(0)" class="dropbtn">WOMEN</a>
+     <a href="javascript:void(0)" class="dropbtn">Accessories</a>
+	 <a href="#">ABOUT</a>
+    <a class="right" href="signIn.html">SIGN IN</a>
+    
+</div>
+<div style="max-width:100%">
+  <img class="mySlides animation1" src="images/slide-1.jpg" style="width:100%">
+  <img class="mySlides animation1" src="images/slide-2.jpg" style="width:100%">
+  <img class="mySlides animation1" src="images/slide-3.jpg" style="width:100%">
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/home-latest-1.jpg">
+      <img src="images/home-latest-1.jpg" alt="denim tops" width="300" height="200">
+    </a>
+    <div class="desc">LADIES TOPS<p><a href="#">SHOP NOW</a></p></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/home-latest-2.jpg">
+      <img src="images/home-latest-2.jpg" alt="Forest">
+    </a>
+    <div class="desc">JACKETS<p><a href="#">SHOP NOW</a></p></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/home-latest-3.jpg">
+      <img src="images/home-latest-3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">MEN's CLOTHES<p><a href="#">SHOP NOW</a></p></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/home-latest-4.jpg">
+      <img src="images/home-latest-4.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">ACCESSORIES<p><a href="#">SHOP NOW</a></p></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+	<section class="winter"> 
+	<h1>BRACE YOURSELVES! WINTER IS COMING...</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei</p><p>usmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</section>
+	<table>
+   <tr>
+    <td class="denimjean">
+	<h1>DENIM JEAN</h1>
+	<p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+	It has roots in a piece of classical Latin literature from 45 BC.</p>
+	</td>
+	<td width="50%">
+	<aside class="stitched">
+	<h1>STITCHED TO PERFECTION</h1>
+	<p>Lorem Ipsum is not simply random text.  classical Latin literature from 45 BC.</p>
+	</aside>
+	<aside class="waterrepellant">
+	<h1>WATER REPELLENT</h1>
+	<p> Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+	</aside>
+	</td>
+  </tr>
+</table>
+
+	
+	<div class="clear">
+	<h1>ALL CLEARANCE ITEMS</h1>
+   <h2>BUY ONE AND GET ONE FREE</h2>
+   <p>50% OFF</p>
+	</div>
+	<footer>
+	<p>© 2017 Groovy Apparel. All Rights Reserved | Design by xyz </p>
+	</footer>
+	<script>
+	var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";	
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+	function myFunction() {
+    var x = document.getElementById("mynavbar");
+    if (x.className === "navbar") {
+        x.className += " responsives";
+    } else {
+        x.className = "navbar";
+    }
+}
+
+function search(){
+var x = document.getElementsByClassName("search");
+var input=document.createElement("input");
+
+}
+
+</script>
+</body>
+</html>
